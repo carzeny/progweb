@@ -1,0 +1,57 @@
+>npm create astro@latest
+>where should we create your new project?
+-pwebmem
+>how would you like to start
+-Empty
+>Install dependencies?
+-Yes
+>Do you plan to write TypeScript?
+-Yes
+>How strict should TypeScript?
+-strict
+>Initialize a new git repository?
+-Yes
+>source $(brew --prefix nvm)/nvm.sh   
+>nvm use v18.17.1 
+>npm run dev
+-para agregar tailwind al proyecto vacio
+$ npx astro add tailwind
+>Astro will run the following command:
+>npm install @astrojs/tailwind tailwindcss@^3.0.24 
+>Continue? … yes
+>Astro will generate a minimal ./tailwind.config.mjs file.
+>Continue? … yes
+>Astro will make the following changes to your config file:
+astro.config.mjs ─────────────────────────────╮
+ │ import { defineConfig } from 'astro/config';  │
+ │                                               │
+ │ import tailwind from "@astrojs/tailwind";     │
+ │                                               │
+ │ // https://astro.build/config                 │
+ │ export default defineConfig({                 │
+ │   integrations: [tailwind()]                  │
+ │ });               
+ >Continue? … yes
+ > success  Added the following integration to your project:
+  - @astrojs/tailwind
+
+-dentro de la carpeta /src crear la carpeta /src/componentes y agregar los archivos Header.astro y Footer.astro
+-agregra la carpeta /src/layout y crear el archivo Layout.astro
+se ponen los import de Header y Footer y se agrega el codigo
+dentro de <body> 
+    <div id="global" class="min-h-screen">
+        <Header/>
+        <slot name="article"/>
+        <Footer/>
+    </div>
+
+
+-para subir el proyecto a Github
+-crear un proyecto vacio en github
+-dentro del proyecto local >git init
+>git origin -add https://github.com/carzeny/progweb.git
+>git add .
+>git commit -m "texto"
+>git push origin main
+
+
