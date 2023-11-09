@@ -47,13 +47,16 @@ dentro de <body>
 
 
 -para subir el proyecto a Github
--crear un proyecto vacio en github
+-crear un proyecto vacio en github "escribir unicamente el nombre del proyecto"
 -dentro del proyecto local 
 git init
 git add .
-git commit -m "Primer commit"
-git branch -M main
-git remote add origin "https://github.com/carzeny/progweb.git"
+git commit -m "Mi primer commit"
+-git status para ver el nombre de a rama, si el nombre es diferete de main hay que renombrar la rama a main
+    git branch -M main
+git remote add origin https://github.com/carzeny/programacionweb.git
+git push origin main
+
 
 
 
