@@ -57,6 +57,10 @@ git commit -m "Mi primer commit"
 git remote add origin https://github.com/carzeny/programacionweb.git
 git push origin main
 
+para crear el proyecto fuente para subir al servidor
+>npm run build
+
+
 
 
 
